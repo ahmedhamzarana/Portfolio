@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@700..800&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: #081b29;
+}
+
+section {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #081b29;
+    color: #fff;
+}
+
+.h100 {
+    height: 100vh;
+}
+
+/* navbar css end */
+.navbar {
+    background-color: #0a111d;
+    box-shadow: 1px 1px 15px #0ef;
+}
+
+nav ul li a {
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    color: #fff !important;
+    display: inline-block;
+    /* Display inline block */
+    transform: scaleX(1);
+    position: relative;
+    /* Set position relative */
+
+}
+
+nav ul li a:hover {
+    transition: 1s !important;
+    color: #0ef !important;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 100px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    color: #0ef !important;
+    background: #0ef;
+    transition: transform 0.50s ease;
+}
+
+nav ul li a:hover:after {
+    color: #0ef !important;
+    transform: scaleX(1);
+}
+
+.navbar-brand{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: cursive;
+    letter-spacing: 2px;
+}
+
+/* navbar css end */
+/* home css start */
+.home {
+    padding-top: 200px;
+    position: relative;
+    justify-content: center;
+    padding: 0%;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: -10px 0;
+}
+
+.home-content p {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: -px;
+}
+
+.home-content h3 span {
+    font-size: 25px;
+    color: #0ef;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box {
+    display: inline-flex;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover {
+    transition: 1s ease-out;
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan
+}
+
+.sub-title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+
+.sub-title span {
+    color: #0ef;
+}
+
+.home-img1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.col-img {
+    display: flex;
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/01/07/01/hacker-7759725_640.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 5px solid #081b29;
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan
+}
+
+/* home css end */
+/* about css start */
+.about {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.col-img2 {
+    background-image: url(https://cdn.pixabay.com/photo/2023/02/01/07/01/hacker-7759725_640.jpg);
+    background-size: cover;
+    display: flex;
+    height: 600px;
+    width: 600px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #0ef;
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan
+}
+
+.about-content h1 span,
+.services-content h1 span,
+.portfolio-content h1 span,
+.contact-content h1 span {
+    color: #0ef !important;
+    font-weight: 700;
+}
+
+/* about css end */
+/* Card css start */
+.card-effect {
+    font-weight: bold;
+    color: black;
+    box-shadow: 1px 8px 22px #0ef;
+    background-color: #ffffff;
+    padding: 25px;
+    transition: all 2.5s ease;
+
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* card css end */
+/* services css start */
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #0ef;
+    color: #fff;
+    font-size: 32px;
+    flex: none;
+}
+
+.services {
+    border-radius: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.services::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: #0ef;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease !important;
+}
+
+.services:hover .iconbox {
+    background-color: #fff;
+    color: #0ef;
+
+}
+
+.services:hover h5,
+.services:hover p {
+    color: #fff !important;
+}
+
+.services:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+/* services css start */
+/* skills css start */
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.bar {
+    font-size: 20px;
+}
+
+.technical-bars .bar {
+    margin: 35px 0;
+}
+
+.technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.technical-bars .bar:first-child {
+    margin-bottom: 0;
+}
+
+.technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    animation: animate 0.7s 0.7s cubic-bezier(1, 0, 0.1, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.progress-line.html span {
+    width: 90%;
+}
+
+.progress-line.css span {
+    width: 60%;
+}
+
+.progress-line.javascript span {
+    width: 85%;
+}
+
+.progress-line.python span {
+    width: 50%;
+}
+
+.progress-line.react span {
+    width: 70%;
+}
+
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-line.html span::after {
+    content: "90%";
+}
+
+.progress-line.css span::after {
+    content: "60%";
+}
+
+.progress-line.javascript span::after {
+    content: "85%";
+}
+
+.progress-line.python span::after {
+    content: "50%";
+}
+
+.progress-line.react span::after {
+    content: "75%";
+}
+
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.radial-bars {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.radial-bars .radial-bar {
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path {
+    stroke-width: 10;
+    stroke: #0ef !important;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 75;
+    }
+}
+
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s linear forwards;
+    opacity: 0;
+}
+
+.progress-bar .text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: -50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s linear forwards;
+    opacity: 0;
+}
+
+/* skills css  end */
+/* project css start */
+.project {
+    border: 2px solid #0EF;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 300PX;
+    transition: all 0.4s ease;
+}
+
+.project .overlay{
+    text-decoration: none;
+    color: #051129;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 17, 41, 0.601);;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.5s ease;
+    opacity: 0;
+
+}
+.project .overlay a {
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: #051129;}
+.project:hover .overlay {
+    opacity: 1;
+
+}
+
+.project:hover img {
+    transform: scale(1.1);
+    background-image: url();
+}
+
+/* project css end */
+/* blog css start */
+.blog-card .btn-box {
+    float: right;
+}
+
+/* blog css end */
+/* contact css start */
+
+.contactform {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #0ef;
+    color: #fff;
+    background: transparent;
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 0px cyan,
+        0 0 0px cyan, 0 0 00px cyan
+}
+
+.contactform h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactform .inputbox {
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    background-color: transparent;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #0ef;
+    outline: none;
+    resize: none;
+
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 1s;
+    color: #fff;
+}
+
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"]{
+    float: right;
+    width: 100px;
+    background: #0ef;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+     
+  }
+@media (max-width:991px) {
+    .contactform {
+        width: 100%;
+    }
+}
+
+.contact-link a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-h h5 {
+    color: #0ef;
+}
+
+/* contactcss end */
+footer {
+    background-color: #051129;
+    color: #fff;
+
+}
+
+footer h3 {
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: cursive;
+    justify-content: center;
+}
+
+.footer-sci a {
+    float: right;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.footer-sci a:hover {
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
